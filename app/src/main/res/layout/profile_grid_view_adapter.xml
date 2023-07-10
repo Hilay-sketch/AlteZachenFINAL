@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:id="@+id/profile_item_photo"
+        android:scaleType="centerCrop"
+        android:transitionName="imageTransition"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".GridView">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/grid_view_search_bar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/grid_sort"
+        android:layout_toRightOf="@id/grid_view_search_bar"
+        android:background="@drawable/sort_but"
+        android:clickable="true"
+        android:layout_alignBottom="@id/grid_view_search_bar"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/grid_bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+<!--    <ProgressBar-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/gridview_pr"-->
+<!--        android:layout_centerInParent="true" />-->
+
+    <GridView
+        android:id="@+id/GVGridView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/grid_view_search_bar"
+        android:layout_above="@id/grid_bottomNavigationView"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"
+        />
+
+</RelativeLayout>

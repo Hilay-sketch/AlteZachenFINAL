@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bt_menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/bt_menu_gridView"
+        android:title="explore"
+        android:icon="@drawable/sharp_grid_view_24"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/bt_menu_createPost"
+        android:title="new post"
+        android:icon="@drawable/baseline_add_24"
+        android:enabled="true"/>
+</menu>

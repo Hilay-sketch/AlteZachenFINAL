@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListViewSeeingStuff">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search" />
+
+    <Button
+        android:id="@+id/btFilterByPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SView"
+        android:layout_marginHorizontal="10dp"
+        android:text="PRICE" />
+    <Button
+        android:id="@+id/btFilterByQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btFilterByPrice"
+        android:layout_below="@id/SView"
+        android:layout_marginHorizontal="10dp"
+        android:text="Quantity" />
+
+
+    <ListView
+        android:id="@+id/ListViewShowingItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btFilterByPrice"
+        android:smoothScrollbar="true" />
+
+    <ProgressBar
+        android:id="@+id/progressListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.altezachen3"
+        minSdk 30
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.altezachen3'
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation "androidx.cardview:cardview:1.0.0"//CardView
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'//navgiton ui?
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'//nav fragment
+    implementation 'androidx.preference:preference:1.2.0'//SHAREDPREF MAINPROFILE
+
+    implementation 'com.hbb20:ccp:2.5.0'//GITHUB COUNTRYCODE PICKER
+
+    implementation "androidx.fragment:fragment:1.5.5"//fragment dep
+
+    //implementation 'jp.wasabeef:glide-transformations:4.1.0'//glideShade
+
+    implementation 'com.google.android.material:material:1.8.0'//navigation bar
+    implementation 'com.google.firebase:firebase-auth:21.1.0'//firebase -auth
+    implementation 'com.google.firebase:firebase-firestore:24.4.3'//firestore
+    implementation 'com.google.firebase:firebase-storage:20.1.0'//firebase storage
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'//glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'//glide compiler
+
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:7.2.0'//firebase storage - ui
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.akexorcist:screenshot-detection:1.0.2'//screen shot detection
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'//messging firebase
+
+}

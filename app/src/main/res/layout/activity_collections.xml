@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Collections">
+
+    <TextView
+        android:id="@+id/textVName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textVPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Price"
+        android:layout_below="@id/textVName" />
+
+    <TextView
+        android:id="@+id/textVQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Quantity"
+        android:layout_below="@id/textVPrice" />
+
+    <TextView
+        android:id="@+id/textVLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Length"
+        android:layout_below="@id/textVQuantity" />
+
+    <TextView
+        android:id="@+id/textVWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Width"
+        android:layout_below="@id/textVLength" />
+
+    <TextView
+        android:id="@+id/textVHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Height"
+        android:layout_below="@id/textVWidth" />
+
+    <TextView
+        android:id="@+id/textVCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="Category"
+        android:layout_below="@id/textVHeight" />
+
+    <TextView
+        android:id="@+id/textVDocName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:hint="DocName"
+        android:layout_below="@id/textVCategory" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btFindDocWithFilter"
+        android:layout_below="@id/textVDocName"
+        android:layout_centerHorizontal="true"
+        android:text="find document with filter"></Button>
+
+
+
+</RelativeLayout>

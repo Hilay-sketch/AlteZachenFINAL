@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF3A9"
+    >
+
+    <EditText
+        android:id="@+id/editItNameD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="The name of the item"
+        android:inputType="text"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editItPriceD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItNameD"
+        android:layout_centerHorizontal="true"
+        android:hint="Price"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editItQuantityD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItPriceD"
+        android:layout_centerHorizontal="true"
+        android:hint="Quantity"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editItLengthD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItQuantityD"
+        android:layout_centerHorizontal="true"
+        android:hint="Size length"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editItWidthD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItLengthD"
+        android:layout_centerHorizontal="true"
+        android:hint="Size width"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editItHeightD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItWidthD"
+        android:layout_centerHorizontal="true"
+        android:hint="Size height"
+        android:textAlignment="center"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/editItCatagoryD"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/editItHeightD"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:hint="Catagory"-->
+<!--        android:textAlignment="center"/>-->
+    <Spinner
+        android:id="@+id/spinnerCatgory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editItHeightD"
+        android:backgroundTint="@color/purple_200"/>
+
+
+</RelativeLayout>

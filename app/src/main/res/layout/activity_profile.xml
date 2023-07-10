@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityProfile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:layout_centerHorizontal="true"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/profile_bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pr_cardView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="300dp">
+        <ImageView
+            android:id="@+id/pr_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/purple_200"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pr_phone"
+        android:layout_alignBottom="@id/pr_cardView"
+        android:background="@drawable/whatsapp_icon_image"
+        android:layout_toRightOf="@id/pr_cardView"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pr_show_fav"
+        android:clickable="true"
+        android:layout_alignBottom="@id/pr_cardView"
+        android:background="@drawable/favorite"
+        android:layout_toLeftOf="@id/pr_cardView" />
+
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pr_no_seller"
+        android:text="Oh no!  :(  you're not a seller"
+        android:textSize="30sp"
+        android:fontFamily="@font/baloo_extra_bold"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/pr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pr_cardView"
+        android:layout_marginTop="5dp"
+        android:textSize="37dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baloo_bold"
+        android:text="name" />
+    <GridView
+        android:id="@+id/pr_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pr_name"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="4dp">
+    </GridView>
+
+</RelativeLayout>

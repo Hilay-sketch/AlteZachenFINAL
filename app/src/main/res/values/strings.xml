@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ALTEZACHEN3</string>
+    <string name="items_collection" />
+    <string name="TAG">LSTSIZE</string>
+    <string name="dialog_message">See Item</string>
+    <string name="dialog_title">See Title Item</string>
+    <string name="cancel">CANCEL</string>
+    <string name="channel_name">NOTI</string>
+    <string name="channel_description">NOTI_FOR_ADD</string>
+    <string-array name="spinnerCatagory">
+        <item>Chair</item>
+        <item>Sofa</item>
+        <item>Table</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_exapppp">EXAPPPP</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">69</string>
+</resources>
